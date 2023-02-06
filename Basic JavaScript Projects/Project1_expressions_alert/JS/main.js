@@ -18,3 +18,5 @@ document.write(B);
 var Family = "The Arezzinis", Dad = "Jeremiah", Mom = "Hermoine", Daughter = "Penny", Son = "Zorro";
 
 document.write(Dad);
+
+document.write(3 + 3);
