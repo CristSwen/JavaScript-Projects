@@ -2,10 +2,10 @@ alert("Hello, World!");
 window.alert("Hello, world!");
 document.write("Hello, world!");
 
-var A = "This is a string";
+var A = "This is a string";     //Writes the string to the document
 document.write(A);
 
-var One = "1 plus 1 is 21";
+var One = "1 plus 1 is 21";     //prints the string text to a window popup
 window.alert(One);
 
 document.write("List told Bart, \"knock it off, Bart! or I'll tell dad!\"<br>\"Eat my shorts!\" Bart responded.");
@@ -24,6 +24,6 @@ document.write(3 / 3);   //This is an expression that divides 3 by 3
 var Sent1 = "This is the beginning of the string";
 var Sent2 = " and this is the end of the string";
 
-var Sent2gether = Sent1 + Sent2;
+var Sent2gether = Sent1 + Sent2;     //This adds Sent1 and Sent2's strings together
 
-document.write(Sent2gether);
+document.write(Sent2gether);  
