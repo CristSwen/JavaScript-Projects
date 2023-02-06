@@ -12,11 +12,11 @@ document.write("List told Bart, \"knock it off, Bart! or I'll tell dad!\"<br>\"E
 
 document.write("\"Be who you are and say what you feel," + " because those who mind don\'t matter and those who matter don\'t mind.\"" + "-Dr.Seuss");
 
-var B = "concatenated" + " String";
+var B = "concatenated" + " String";           //This adds the two strings todtether
 document.write(B);
 
 var Family = "The Arezzinis", Dad = "Jeremiah", Mom = "Hermoine", Daughter = "Penny", Son = "Zorro";
 
-document.write(Dad);
+document.write(Dad);     //This writes the name of the "Dad" parameter on the document
 
-document.write(3 + 3);
+document.write(3 / 3);   //This is an expression that divides 3 by 3
