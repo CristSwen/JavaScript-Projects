@@ -20,3 +20,10 @@ var Family = "The Arezzinis", Dad = "Jeremiah", Mom = "Hermoine", Daughter = "Pe
 document.write(Dad);     //This writes the name of the "Dad" parameter on the document
 
 document.write(3 / 3);   //This is an expression that divides 3 by 3
+
+var Sent1 = "This is the beginning of the string";
+var Sent2 = " and this is the end of the string";
+
+var Sent2gether = Sent1 + Sent2;
+
+document.write(Sent2gether);
