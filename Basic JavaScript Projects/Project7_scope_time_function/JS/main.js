@@ -18,19 +18,20 @@ function Add_numbers_3() {          //Local scope function
     document.write(20 + Y + "<br>");
 }
 
-function Add_numbers_4() {      //Intentional nonfunctioning function
-    console.log(Y + 100);
+function Add_numbers_4() {     //Intentional nonfunctioning function
+    document.write(Y + 100);
 }
 
 Add_numbers_3();
 Add_numbers_4();
 
+
+if (10 < 12) {
+    document.write("10 is less than 12 duh");
+}
+
 function get_Date() {
     if (new Date().getHours() < 18) {
         document.getElementById("oompa").innerHTML = "How are you today?";
     }
-}
-
-if (8 < 12) {
-    document.write("10 is less than 12 duh")
 }
