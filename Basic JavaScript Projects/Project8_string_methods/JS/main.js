@@ -13,3 +13,9 @@ function Slice_Method() {               //Slice will take the characters from 27
     var Section = Sentence.slice(27, 33);
     document.getElementById("Slice").innerHTML = Section;
 }
+
+var text1 = "This is some text";
+var text2 = document.write(text1.toUpperCase());
+
+var str = "This is a string";
+document.write(str.indexOf("string"));
