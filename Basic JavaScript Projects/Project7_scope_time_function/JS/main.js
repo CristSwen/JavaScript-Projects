@@ -24,3 +24,13 @@ function Add_numbers_4() {      //Intentional nonfunctioning function
 
 Add_numbers_3();
 Add_numbers_4();
+
+function get_Date() {
+    if (new Date().getHours() < 18) {
+        document.getElementById("oompa").innerHTML = "How are you today?";
+    }
+}
+
+if (8 < 12) {
+    document.write("10 is less than 12 duh")
+}
