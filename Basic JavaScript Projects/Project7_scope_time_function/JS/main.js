@@ -28,11 +28,11 @@ Add_numbers_4();
 
 
 
-if (10 < 12) {
+if (10 < 12) {                                  //A if function to check if a number is smaller than the other
     document.write("10 is less than 12 duh");
 }
 
-function get_Date() {
+function get_Date() {                           //This if function checks if the current hour is less than 18:00 then asks a question if it is less than 18:00
     if (new Date().getHours() < 18) {
         document.getElementById("oompa").innerHTML = "How are you today?";
     }
@@ -41,7 +41,7 @@ function get_Date() {
 
 
 
-function Age_Function() {
+function Age_Function() {                   //This if and else function will ask you to input a number age. If you are under 21 it will give you one response vice versa
     Age = document.getElementById("Age").value;
     if (Age >= 21) {
         Drink = "You are old enough to drink!";
@@ -54,7 +54,7 @@ function Age_Function() {
 
 
 
-function Time_function() {
+function Time_function() {                      //This else if function will tell you what time of day it is using the date methods
     var Time = new Date().getHours();
     var Reply;
     if (Time < 12 == Time > 0) {
