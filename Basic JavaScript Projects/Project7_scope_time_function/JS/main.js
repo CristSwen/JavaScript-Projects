@@ -43,11 +43,11 @@ function get_Date() {
 
 function Age_Function() {
     Age = document.getElementById("Age").value;
-    if (Age >= 18) {
-        Vote = "You are old enough to vote!";
+    if (Age >= 21) {
+        Drink = "You are old enough to drink!";
     }
     else {
-        Vote = "You are not old enough to vote!";
+        Drink = "You are not old enough to drink!";
     }
-    document.getElementById("How_old_are_you?").innerHTML = Vote;
+    document.getElementById("How_old_are_you?").innerHTML = Drink;
 }
