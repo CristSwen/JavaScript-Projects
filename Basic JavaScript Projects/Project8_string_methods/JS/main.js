@@ -8,7 +8,7 @@ function full_Sentence() {
 }
 
 
-function Slice_Method() {
+function Slice_Method() {               //Slice will take the characters from 27 to 33 and only print those
     var Sentence = "All work and no play makes Johnny a dull boy.";
     var Section = Sentence.slice(27, 33);
     document.getElementById("Slice").innerHTML = Section;
