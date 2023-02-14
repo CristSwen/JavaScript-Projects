@@ -1,4 +1,4 @@
-function Call_loop() {
+function Call_Loop() {
     var num = ""
     var X = 1;
     while (X < 10) {
