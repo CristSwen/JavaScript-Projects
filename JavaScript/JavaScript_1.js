@@ -1,6 +1,6 @@
 function Color_Function() {
     var Color_Output;
-    var Colors = document.getElementById("Color_Input").value;
+    var Colors = document.getElementById("Color_Input").value;      //All this code will check to see what you input and give you a response based on what you input
     var Color_String = " is a great color!";
     switch(Colors) {
         case "Red":
