@@ -41,3 +41,15 @@ function constant_function() {
     Musical_Instrument.price = "$900";
     document.getElementById("Constant").innerHTML = "The cost of the " + Musical_Instrument.color + " " + Musical_Instrument.type + " was " + Musical_Instrument.price;
 }
+
+
+var L = 22;
+{
+    let L = 56;
+}
+document.getElementById("Let").innerHTML = L;
+
+function myFunction(name) {
+    return "Hello " + name;
+}
+document.getElementById("Return").innerHTML = myFunction("Sakura");
