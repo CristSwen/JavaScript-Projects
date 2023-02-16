@@ -1,0 +1,19 @@
+input {
+    width: 100%;
+}
+
+input[type=text] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 20px;
+    background-color: gray;
+    border: 2px solid black;
+    color: white;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
