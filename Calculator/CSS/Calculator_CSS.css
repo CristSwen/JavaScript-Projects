@@ -59,6 +59,12 @@ button:hover {
 }
 
 .all-clear {
+    background-color: red;
+    border-color: darkslategray;
+    color: #ffffff;
+}
+
+.equal-sign {
     background-color: blue;
     border-color: darkslategray;
     color: #fff;
