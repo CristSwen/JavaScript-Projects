@@ -5,7 +5,7 @@ const Calculator = {
     //This will hold the first operand for any expressions, we set it to null for now.
     First_Operand: null,
     //This checks whether or not the second operand has been inputted by the user
-    Wait_second_Operand: false,
+    Wait_Second_Operand: false,
     //This will hold the operator, we set it to null for now.
     operator: null,
 };
@@ -50,12 +50,12 @@ function Handle_Operator(Next_Operator) {
         return;
     }
     if (First_Operand == null) {
-        Calculator.First_Operand = Value_of_Input;
+        Calculator.First_Operand = Value_Of_Input;
     } else if (operator) {//s if an operator already exists
         const Value_Now = First_Operand || 0;
         //If operator exists, property lookup is performed for the operator
         //in the perform_calculation object and the function that matches the operator is executed.
-        let result = Perform_Calculation[operator] (Value_Now, Value_of_Input);
+        let result = Perform_Calculation[operator](Value_Now, Value_Of_Input);
         //Here we add a fixed amount of numbers after the decimal.
         result = Number(result).toFixed (9);
         //This will remove any trailing 0's
@@ -84,13 +84,13 @@ function Calculator_Reset() {
 //This function updates the calculator screen with the contents of Display-value
 function Update_Display() {
     //makes use of the calculator screen class to target the input tag in the HTML document
-    const display = document.querySelector('.calculator-screen');
+    const display = document.querySelector(".calculator-screen");
     display.value = Calculator.Display_Value;
 }
 
 Update_Display();
 //This section monitors button clicks
-const keys = document.querySelector('.calculator-keys');
+const keys = document.querySelector(".calculator-keys");
 keys.addEventListener('click', (event) =>{
     //the target variable is an object that represents the element that was clicked
     const { target } = event;
@@ -98,7 +98,7 @@ keys.addEventListener('click', (event) =>{
     if (!target.matches('button')) {
         return;
     }
-    if (target.classlist.contains('operator')) {
+    if (target.classList.contains('operator')) {
         Handle_Operator(target.value);
         Update_Display();
         return;
