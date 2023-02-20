@@ -1,0 +1,69 @@
+#menuBG {                   /* This centers the whole menu */
+    width: 400px;
+    height: 470px;
+    margin: 10px auto;
+}
+
+#frmMenu {
+    width: 400px;
+    height: 200px;
+}
+
+#totalPrice {
+    width: 200px;
+    height: 190px;
+    margin: 0 auto;
+    float: right;
+}
+
+.left {             /*This positions the left side of the menu */
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.right {               /*This positions the meats to the right side of the menu*/
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+
+#showText {
+    width: 200px;
+    height: 190px;
+    margin: 0px auto;
+    float: left;
+}
+
+#cart {
+    top: 0;
+    margin: 0px auto;
+    width: 400px;
+    height: 200px;
+}
+
+#btnOrder {
+    margin: 10px 0px 0px 100px;
+    width: 100px;
+    height: 40px;
+}
+
+body {
+    background-color: #FFFAF0;
+}
+
+h1 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #808000;
+    letter-spacing: 3px;
+}
+
+h3 {
+    font-family:'Times New Roman', Times, serif;
+    color: #008000;
+}
+
+div {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #6B8E23;
+}
