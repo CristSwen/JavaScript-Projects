@@ -6,7 +6,7 @@ function getReceipt() {
     var sizeTotal = 0;
     var sizeArray = document.getElementsByClassName("size");
     for (var i = 0; i < sizeArray.length; i++) {
-        if (sizeArray[i].chekced) {
+        if (sizeArray[i].checked) {
             var selectedSize = sizeArray[i].value;
             text1 = text1+selectedSize+"<br>";
         }
@@ -52,7 +52,7 @@ function getTopping(runningTotal, text1) {
     console.log(toppingCount+" topping - 1 free topping = "+"$"+toppingTotal+".00");
     console.log("topping text1: "+text1);
     console.log("Purchase Total: "+"$"+runningTotal+".00");
-    document.getElementById("ShowText").innerHTML=text1;
+    document.getElementById("showText").innerHTML = text1;
     document.getElementById("totalPrice").innerHTML = "<h3>Total: <strong>$"+
         runningTotal+".00"+"</strong></h3>";
 };
