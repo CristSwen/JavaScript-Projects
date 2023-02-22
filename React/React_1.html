@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <script src="react-dom.js"></script>
+        <script src="reat.js"></script>
+		<title>Title</title>
+	</head>
+	<body>
+        <div id="My_React_Code"></div>
+        <script>
+            var Counter = React.createClass({      //Creates a component class
+                render: function() {
+                    var time_Passed = Math.round(this.props.time_Passed / 100);
+                    var seconds_Passed = time_Passed / 10 + (time_Passed % 10 ? '' : '.0' );   //The ? is a conditional operator that checks for wherther or not a condition is true. THe : following is "else"
+                    var text = 'My React code started running ' +
+                        seconds_Passed + ' seconds ago!';
+                    return React.DOM.p(null, text);
+                }
+            });
+
+            var counter_Factory = React.createFactory(Counter);       //React.createFactory is a function that generates a factory(Object that can create other objects)
+
+            var start_Counting = new Date().getTime();
+            setInterval(function() {
+                ReactDOM.render(       //ReactDOM.render is used to render a react component
+                    counter_Factory({time_Passed: new Date().getTime() - start_Counting}),
+                    document.getElementById('My_React_Code')
+                );
+            }, 50);
+        </script>
+
+
+	</body>
+</html>
