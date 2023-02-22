@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="XML_Example"></p>
+        <script>
+            var XML_Parser, XML_Document;
+
+            //creates a text string
+            var Computer = "<computer>" +
+                "<motherboard>Z390 AORUS ELITE w/ DDR4</motherboard>" +
+                "<ram>Vengeance RGB Pro 32GB DDR4</ram>" +
+                "<gpu>Geforce RTX 2070 SUPER</gpu>" +
+                "<processor>Core i9-9900KS</processor>" +
+                "</computer>";
+
+                //creates an SML DOM parser
+                XML_Parser = new DOMParser();
+
+                //creates a new SML DOM object using the text string
+                XML_Document = XML_Parser.parseFromString(Computer, "text/xml");
+
+                document.getElementById("XML_Example").innerHTML =
+                XML_Document.getElementsByTagName("motherboard")[0].childNodes[0].nodeValue;
+        </script>
+    </body>
+</html>
